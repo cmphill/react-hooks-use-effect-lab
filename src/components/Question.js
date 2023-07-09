@@ -10,7 +10,6 @@ function Question({ question, onAnswered }) {
       if (timeRemaining > 0) {
         setTimeRemaining(timeRemaining - 1);
       } else {
-        clearInterval(timerInterval);
         handleAnswer(false);
       }
     }, 1000);
